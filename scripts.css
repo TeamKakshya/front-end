@@ -1,9 +1,51 @@
 *{
   overflow-x: hidden;
 }
+
+@media only screen and (max-width:768px) {
+  .events .box, .notice .right-box{
+    margin:20px;
+    padding: 0;
+    width: auto;
+  }
+  .centered .slider, .centered .slider{
+    width: auto;
+  }
+}
+
+/*events at left side of slide bar*/
+  .slide .row  .events .box .event{
+    padding: 0;
+  }
+  .slide .row  .events .box .event li{
+    display: inline;
+
+  }
+
+
+
+/*events at left side*/
+.box{
+  margin-top:35%;
+  margin-left: 20%;
+  padding: 10px;
+}
+
+.right-box{
+  height: auto;
+  margin-right: 20%;
+  margin-top: 35%;
+  padding: 10px;
+}
+
+.centered{
+  /* border: 1px solid red; */
+}
+
+
 .tab-panels{
   margin-top: 20px;
-  border: 1px solid red;
+  border: 1px solid green;
   background-color: #eee;
 }
 
@@ -27,7 +69,7 @@
 .tab-panels .panel{
   display: none;
   /* background: #ccc; */
-   padding: 30px;/*can change naramro dekhiyema*/
+   padding: 20px;/*can change naramro dekhiyema*/
   /*border-radius: 0 0 10px 10px;tyo border matra ho*/
 }
 
@@ -39,27 +81,26 @@
 /*For slider container*/
 .slider{
   width:1000px;
-  height: 560px;
+  /* height: 560px; */ /*here if uncommented small gap which can be used to write index*/
   overflow: hidden;
+  border: 1px solid black;
 }
 
 .slider .slides{
   display:block;
   width:6000px;
-  height: 533px;
+  /* height: 533px; */
   margin: 0;
   padding: 0;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  overflow:hidden;
 }
 
 .slides .slide{
+  margin-top:auto;
   text-align: center;
   float: left;
   list-style-type: none;
   width: 1000px;/*w:800*533*/
-  height: 533px;
+  height: auto;
 }
 
 /* .dot{
@@ -96,4 +137,10 @@
 .list{
   border: 2px solid #ccc;
   border-radius: 10px;
+}
+
+.news-feed{
+  /* border:1px solid black; */
+  height: 460px;
+
 }

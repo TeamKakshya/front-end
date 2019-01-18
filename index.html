@@ -11,7 +11,7 @@
 
 </head>
 <body>
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed">
     <!--logo-->
     <a class="navbar-brand" href="#">
       <img src="icon1.png" alt="Kakshya" style="width:100px">
@@ -45,33 +45,65 @@
       </ul>
     </div>
     <!-- </div> -->
-
-
-
   </nav>
 
-  <!--jumbotron-->
-  <div class="jumbotron">
-    <div class="container">
-      <h1 class="text-center">Kakshya:A Network For Students</h1>
-      <p class="text-center">This is just a network to connect students</p>
-    </div>
-  </div>
-
   <!--slide-->
-  <div class="slide container">
-    <h1>slides</h1>
-    <div class="slider">
-      <!-- <div class="col-sm-12"> -->
+  <div class="slide">
+    <div class="row">
 
-        <ul class="slides">
-          <li class="slide"><img src="otter1.jpg"></li><!--have to make responsive-->/
-          <li class="slide"><img src="otter2.jpg"></li>
-          <li class="slide"><img src="otter3.jpg"></li>
-          <li class="slide"><img src="otter4.jpg"></li>
-          <li class="slide"><img src="otter5.jpg"></li>
-        </ul>
+      <div class="events col-sm-2">
+        <div class="box card bg-light">
+          <h2 class="text-center card " style="display:inline">Events <span class="far fa-calendar-check"></span></h2>
+            <div class="eve container">
+
+              <ul class="event 1">
+                <a href="#"><li class="eventProg">FlashMob</li>
+                <li class="eventDay">@4pm</li></a>
+              </ul>
+
+              <ul class="event 2">
+                <a href="#"><li class="eventProg">FlashMob</li>
+                <li class="eventDay">@4pm</li></a>
+              </ul>
+            </div>
+        </div>
+
       </div>
+      <div class="col-sm-8">
+
+        <div class="centered container">
+          <h1 class="text-center">Articles</h1>
+          <div class="slider container">
+            <!-- <div class="col-sm-12"> -->
+
+            <ul class="slides">
+              <li class="slide thumbnai"><img src="otter1.jpg"></li><!--have to make responsive-->/
+              <li class="slide"><img src="otter2.jpg"></li>
+              <li class="slide"><img src="otter3.jpg"></li>
+              <li class="slide"><img src="otter4.jpg"></li>
+              <li class="slide"><img src="otter5.jpg"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="notice col-sm-2">
+        <div class="right-box card bg-light">
+          <h2 class="text-center card">Notices</h2>
+          <marquee scrolldelay="100" direction="up">
+            <center>
+              <a href="#" target="_blank">Sailesh's birthday Magh12</a><br>
+              <a href="#" target="_blank">FlashMob</a><br>
+              <a href="#" target="_blank">Hack-a-week</a><br>
+              <a href="#" target="_blank">Codecamp</a><br>
+              <a href="#" target="_blank">Energy-Hackathon</a><br>
+              <a href="#" target="_blank">Codejam</a><br>
+              <a href="#" target="_blank">Circuit Fabrication</a><br>
+              <a href="#" target="_blank">Notice1</a><br>
+          </center>
+          </marquee>
+        </div>
+      </div>
+    </div>
       <!-- <div style="text-align:center">
         <span class="dot" onclick="assign(1)"></span>
         <span class="dot" onclick="assign(2)"></span>
@@ -84,12 +116,12 @@
   <!--partition-->
   <div class="section container"><hr>
     <div class="row">
-      <div class="col-sm-3 ">
-        <h3>Events</h3>
-          
-        <div class="c">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+      <div class="col-md-3">
+        <div class="project container card">
+          <h3>Projects<span class="fa fa-projects"></span></h3>
+            <ul style="padding:0">
+              <li>Project1</li>
+            </ul>
         </div>
         <hr>
         <div class="birthday">
@@ -115,11 +147,9 @@
 
         </div>
       </div>
-      <div class="col-sm-6">
-        <h2 class="text-center ">News Feed</h2>
-  <!--just the tab panels from tab-panel_widget-->
-        <!-- <div class="container"> -->
-
+      <div class="feed col-sm-6">
+        <div class="news-feed">
+          <h2 class="text-center ">News Feed</h2>
           <div class="tab-panels">
             <ul class="tabs">
               <li rel="panel1" class="active">Post</li>
@@ -128,10 +158,10 @@
               <li rel="panel4">Ask a question</li>
             </ul>
             <div id="panel1" class="panel active">
-              <div class="box">
+              <div class="boxx"><!--duita box xa-->
                 <form class="forms" action="forms.html" method="post">
-                  <textarea class="text-area" name="texts" rows="8" cols="50" placeholder="Feel free to share."></textarea><br>
-                  <button name="button">Post</button>
+                  <textarea class="text-area" name="texts" rows="8" cols="80" placeholder="Feel free to share."></textarea><br>
+                  <button class="btn btn-success" name="button">Post</button>
                 </form>
               </div>
             </div>
@@ -159,7 +189,18 @@
               </div>
             </div>
         </div>
+        </div>
+  <!--just the tab panels from tab-panel_widget-->
+        <!-- <div class="container"> -->
+
+
        <!-- </div> -->
+       <div class="feed">
+         <h1>Everything till now</h1>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       </div>
     </div><!--col-sm-6-->
 
 
@@ -171,6 +212,7 @@
       </div>
     </div>
   </div>
+
 
 
   <script src="jquery.js"></script>

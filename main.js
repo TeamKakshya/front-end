@@ -1,5 +1,5 @@
 //for the tab panel widget scroll down on click
-$(function() {
+$(document).ready(function() {
 
     $('.tab-panels .tabs li').bind('click', function() {
 
