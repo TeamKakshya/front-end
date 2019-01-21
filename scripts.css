@@ -22,6 +22,11 @@
 
   }
 
+.affix{
+  top:0;
+  width: 100%;
+  z-index:9999;
+}
 
 
 /*events at left side*/
@@ -80,7 +85,7 @@
 
 /*For slider container*/
 .slider{
-  width:1000px;
+  width:800px;
   /* height: 560px; */ /*here if uncommented small gap which can be used to write index*/
   overflow: hidden;
   border: 1px solid black;

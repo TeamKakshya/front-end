@@ -8,10 +8,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="scripts.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.24.6'><\/script>".replace("HOST", location.hostname));
+//]]></script>
 
 </head>
 <body>
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark" data-spy="affix" data-offset-top="197">
     <!--logo-->
     <a class="navbar-brand" href="#">
       <img src="icon1.png" alt="Kakshya" style="width:100px">
@@ -72,13 +75,13 @@
       <div class="col-sm-8">
 
         <div class="centered container">
-          <h1 class="text-center">Articles</h1>
+          <!-- <h1 class="text-center">Articles</h1> -->
+          <br>
           <div class="slider container">
             <!-- <div class="col-sm-12"> -->
-
             <ul class="slides">
-              <li class="slide thumbnai"><img src="otter1.jpg"></li><!--have to make responsive-->/
-              <li class="slide"><img src="otter2.jpg"></li>
+              <li class="slide thumbnai"><img src="4.JPG" width="900px" height="533px"></li><!--have to make responsive-->/
+              <li class="slide"><img src="6.JPG" width="900px" height="533px"></li>
               <li class="slide"><img src="otter3.jpg"></li>
               <li class="slide"><img src="otter4.jpg"></li>
               <li class="slide"><img src="otter5.jpg"></li>
@@ -185,7 +188,7 @@
               <div class="question">
                 <h1>Question</h1>
                 <textarea name="texts question" rows="8" cols="80" placeholder="The question is"></textarea><br>
-                <button type="submit" name="button">Submit</button>
+                <button class="btn btn-success"type="submit" name="button">Submit</button>
               </div>
             </div>
         </div>
