@@ -1,6 +1,9 @@
 *{
   overflow-x: hidden;
 }
+body{
+  position: relative;
+}
 
 @media only screen and (max-width:768px) {
   .events .box, .notice .right-box{
@@ -11,7 +14,46 @@
   .centered .slider, .centered .slider{
     width: auto;
   }
+  .slide .row .image{
+    width: auto;
+    margin-left:0;
+  }
 }
+@media (max-width:576px),(max-width:600px) {
+  body{
+    padding-top: 120px;
+  }
+  .notice{
+    border: 1px solid red;
+    position:static
+  }
+  .slide .row .events{
+    position:static;
+  }
+}
+@media (min-width:600px) {
+  .notice{
+    position: fixed;
+    top:2;
+    right:0;
+  }
+  .slide .row .events{
+    position:fixed;
+    width: 100%;
+  }
+
+}
+  /* .slide .row .image{
+    width: auto;
+    margin-left: 0;
+  }
+  .slide .row .image .slides{
+    width: auto;
+  }
+  .slide .row .image .slides .slide{
+    width: auto;
+  }
+
 
 /*events at left side of slide bar*/
   .slide .row  .events .box .event{
@@ -19,14 +61,24 @@
   }
   .slide .row  .events .box .event li{
     display: inline;
+  }
+
+
+
+
+  .slide .row .image {
+    margin-left: 300px;
+  }
+
+
+  /*birthdays below events*/
+  .birthdays{
+    margin-top:20%;
+    margin-left: 20%;
+    padding: 10px;
 
   }
 
-.affix{
-  top:0;
-  width: 100%;
-  z-index:9999;
-}
 
 
 /*events at left side*/
@@ -36,12 +88,15 @@
   padding: 10px;
 }
 
+
 .right-box{
   height: auto;
   margin-right: 20%;
   margin-top: 35%;
   padding: 10px;
+
 }
+
 
 .centered{
   /* border: 1px solid red; */
@@ -59,7 +114,7 @@
 } */
 
 
-.tab-panels ul li{
+.tab-panels .tabs li{
   margin: 10px;
   display: inline-block;
   text-align: center;
@@ -67,7 +122,7 @@
   font-weight:500;
 }
 
-.tab-panels ul li:hover{
+.tab-panels .tabs li:hover{
   color: #777;
 }
 
@@ -85,11 +140,14 @@
 
 /*For slider container*/
 .slider{
-  width:800px;
+  width:1000px;
   /* height: 560px; */ /*here if uncommented small gap which can be used to write index*/
   overflow: hidden;
-  border: 1px solid black;
+  border: 5px solid #343a40;
+  /* position: absolute; for classboard
+  top:10%; */
 }
+
 
 .slider .slides{
   display:block;
@@ -146,6 +204,6 @@
 
 .news-feed{
   /* border:1px solid black; */
-  height: 460px;
+  height: auto;
 
 }
