@@ -11,18 +11,21 @@ body{
     padding: 0;
     width: auto;
   }
-  .centered .slider, .centered .slider{
+ /* .centered .slider{
     width: auto;
-  }
-  .slide .row .image{
+  } */
+  /* .slide .row .image{
     width: auto;
     margin-left:0;
+  } */
+}
+
+@media (max-width:576px){
+  body{
+     padding-top:120px; /*fixed navbar overlay the below content in mobile */
   }
 }
-@media (max-width:576px),(max-width:600px) {
-  body{
-    padding-top: 120px;
-  }
+@media (max-width:600px) {
   .notice{
     border: 1px solid red;
     position:static
@@ -31,7 +34,7 @@ body{
     position:static;
   }
 }
-@media (min-width:600px) {
+@media (min-width:1600px) {
   .notice{
     position: fixed;
     top:2;
@@ -41,19 +44,16 @@ body{
     position:fixed;
     width: 100%;
   }
-
+  .slide .row .image {
+    margin-left: 16%;
+  }
 }
-  /* .slide .row .image{
-    width: auto;
-    margin-left: 0;
+/* @media (max-width:1600px) {
+  .slide .row .image {
+    margin: 0px;
+    border:2px solid red;
   }
-  .slide .row .image .slides{
-    width: auto;
-  }
-  .slide .row .image .slides .slide{
-    width: auto;
-  }
-
+} */
 
 /*events at left side of slide bar*/
   .slide .row  .events .box .event{
@@ -64,11 +64,6 @@ body{
   }
 
 
-
-
-  .slide .row .image {
-    margin-left: 300px;
-  }
 
 
   /*birthdays below events*/
@@ -206,4 +201,8 @@ body{
   /* border:1px solid black; */
   height: auto;
 
+}
+
+.stories_photo li{
+  display: inline;
 }
