@@ -27,7 +27,6 @@ body{
 }
 @media (max-width:600px) {
   .notice{
-    border: 1px solid red;
     position:static
   }
   .slide .row .events{
@@ -47,6 +46,7 @@ body{
   .slide .row .image {
     margin-left: 16%;
   }
+
 }
 /* @media (max-width:1600px) {
   .slide .row .image {
@@ -205,4 +205,13 @@ body{
 
 .stories_photo li{
   display: inline;
+}
+
+.add:hover{
+  color: #bbb;
+  cursor: pointer;
+}
+.remove:hover{
+  color: #bbb;
+  cursor: pointer;
 }
