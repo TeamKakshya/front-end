@@ -215,3 +215,10 @@ body{
   color: #bbb;
   cursor: pointer;
 }
+
+.bUTTON{
+  position: fixed;
+  /* bottom: 0;
+  right: 10px; */
+  width: 200px;
+}

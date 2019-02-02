@@ -49,14 +49,16 @@
     <menu>
       <!-- <div class="container"> -->
         <div class="row">
-          <div class="menu_side col-sm-2">
+          <div class="menu_side col-md-2">
 
             <button class="btnclass btn btn-success" onclick="call('all_books',this)" id="defaultclick">All Books</button>
             <button class="btnclass btn btn-primary" onclick="call('status_books',this)">Status</button>
             <button class="btnclass btn btn-info" onclick="call('my_bucket',this)">My Bucket</button>
             <button class="btnclass btn btn-dark" onclick="call('search_books',this)">Search for books</button>
+            <button class="btnclass btn btn-secondary" onclick="call('add_books',this)">Add Books</button>
+            <!-- <button class="btnclass btn btn-default" onclick="call('ask_books',this)">Ask for books</button> -->
           </div>
-          <div class="content_side col-sm-9">
+          <div class="content_side col-md-9">
 
             <div id="all_books" class="btndiv">
               <h2>All Books</h2>
@@ -90,6 +92,46 @@
 
             <div id="status_books" class="btndiv">
               <h2>Book Status</h2>
+              <h4>Available Books</h4>
+              <table class="table table-bordered table-hover">
+                <tr>
+                  <th>S.N</th>
+                  <th>Name of books</th>
+                  <th>Author</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td><a href="english.html">English</a><br>
+                     <img src="otter1.jpg" alt="" width="200px"></td>
+                  <td>JKM</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><a href="electromagnetics.html">Electromagnetism</a><br>
+                     <img src="otter2.jpg" alt="" width="200px"></td>
+                  <td>SSP</td>
+                </tr>
+              </table>
+              <h4>Unavailable Books</h4>
+              <table class="table table-bordered table-hover">
+                <tr>
+                  <th>S.N</th>
+                  <th>Name of books</th>
+                  <th>Author</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td><a href="english.html">English</a><br>
+                     <img src="otter1.jpg" alt="" width="200px"></td>
+                  <td>JKM</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><a href="electromagnetics.html">Electromagnetism</a><br>
+                     <img src="otter2.jpg" alt="" width="200px"></td>
+                  <td>SSP</td>
+                </tr>
+              </table>
             </div>
 
 
@@ -152,9 +194,38 @@
               </div>
             </div>
 
+            <div id="add_books" class="btndiv">
+              <h2>Add Book</h2>
+              <form class="form-inline mt-4" action="index.html" method="post">
+                <div class="form-group">
+                  <label for="title">Title:-</label>
+                  <input type="text" name="" value="" class="form-control">
+                </div>
+              </form>
+              <form class="form-inline mt-4" action="index.html" method="post">
+                <div class="form-group">
+                  <label for="author">Author:-</label>
+                  <input type="text" name="" value="" class="form-control">
+                </div>
+              </form>
+              <form class="form-inline mt-4" action="index.html" method="post">
+                <div class="form-group">
+                  <label for="cover_photo">Cover photo:-</label>
+                  <input type="file" name="" value="" class="form-control-file border">
+                  <label for="add_file">Add File:-</label>
+                  <input type="file" name="" value="" class="form-control-file border">
+                  <button class="btn btn-primary mt-2" type="submit" name="">Upload</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- <div id="ask_books" class="btndiv">
+              <h2>Ask for books</h2>
+            </div> -->
+
           </div>
 
-          <div class="col-sm-1">
+          <div class="col-md-1">
 
           </div>
         </div>
