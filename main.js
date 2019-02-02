@@ -27,6 +27,19 @@ $(document).ready(function() {
       document.getElementsByClassName('options').style.display="block";
     }
 
+    //show hidden input text for add notice
+    $('.add_notice').on('click',show_add);
+    function show_add() {
+    $(".add_input").css("display","block");
+  }
+
+    //for taking the value of input text in input add events
+    $('.add_button').on('click',takevalue);
+    function takevalue() {
+      var test = $("#notice_input").val();
+      $('.mark').append('<a href="#" target="_blank">'+test);
+    }
+
     $('.bUTTON').on('click',change_css );
 
     function change_css() {
