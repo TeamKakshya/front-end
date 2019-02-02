@@ -27,6 +27,16 @@ $(document).ready(function() {
       document.getElementsByClassName('options').style.display="block";
     }
 
+    $('.bUTTON').on('click',change_css );
+
+    function change_css() {
+        $('.collapse').slideToggle(200);
+      }
+
+    //chat width fixed of tABS
+
+     // var parentwidth = $(".collapse").width();
+     // $(".tABS").toggleClass(".fixed").width(parentwidth);
 
 
 });

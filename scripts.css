@@ -216,9 +216,21 @@ body{
   cursor: pointer;
 }
 
-.bUTTON{
+/*for chat*/
+.bottoms{
   position: fixed;
-  /* bottom: 0;
-  right: 10px; */
-  width: 200px;
+  bottom: 0;
+  right: 30px;
+  width: auto;
+}
+
+.collapse{
+  display: none;
+  border:1px solid green;
+  height: 400px;
+  position: relative;
+}
+
+.bUTTON{
+  width: 290px;
 }
