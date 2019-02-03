@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" >
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
     <!--logo-->
     <a class="navbar-brand" href="index.html">
       <img src="icon1.png" alt="Kakshya" style="width:100px">
@@ -71,22 +71,33 @@
 
               <button type="" name="" class="event_addbtn"><span class="far fa-plus-square">Add</span></button>
               <form class="events_form" style="display:none">
-                <input type="text" name="" value="" class="event_text">
-                <button type="submit" name="" class="event_donebtn">Done</button>
+                <input type="text" name="" value="" class="event_text" placeholder="Event Name">
+                <input type="text" class="event_time" placeholder="Event Time">
+                <button type="button" name="" class="event_donebtn">Done</button>
               </form>
             </div>
         </div>
         <div class="birthdays card bg-light">
           <h2 class="text-center card" style="display:inline">Birthdays <span class="fa fa-birthday-cake"></span></h2>
-          <ul class="list container">
-            <li class="photo"><img class="avatar" src="black.png" alt=""></li>
-            <li class="name">2</li>
-          </ul>
-          <ul class="list container ">
-            <li class="photo"><img class="avatar" src="black.png" alt=""></li>
-            <li class="name">2</li>
-          </ul>
-          <a href="add_events"><span class="far fa-plus-square" style="margin-left:70%;">Add</span></a>
+          <div class="birthday_panel">
+            <ul class="list container" style="background-color:#ffff">
+              <li class="photo"><img class="avatar" src="black.png" alt=""></li>
+              <li class="name">2</li>
+            </ul>
+            <ul class="list container " style="background-color:#ffff">
+              <li class="photo"><img class="avatar" src="black.png" alt=""></li>
+              <li class="name">2</li>
+            </ul>
+
+          </div>
+
+          <button type="" name="" class="birthday_addbtn"><span class="far fa-plus-square">A day more older</span></button>
+          <form class="birthday_form" style="display:none">
+            <input type="text" name="" value="" class="birthday_text" placeholder="Birthday Student">
+            <input type="text" class="birthday_date" placeholder="birthdate">
+            <button type="button" name="" class="birthday_donebtn">Done</button>
+          </form>
+          <!-- <a href="add_events"><span class="far fa-plus-square" style="margin-left:70%;">Add</span></a> -->
 
           <!-- <div class="day card">
             <img class="avatar" src="black.png" alt="abc" width="auto">
@@ -129,7 +140,7 @@
         <div class="right-box card bg-light">
           <h2 class="text-center card">Notices</h2>
           <marquee scrolldelay="100" direction="up" >
-            <center class="mark">
+            <center class="marks">
               <a href="#" target="_blank">Sailesh's birthday Magh12</a><br>
               <a href="#" target="_blank">FlashMob</a><br>
               <a href="#" target="_blank">Hack-a-week</a><br>
@@ -155,7 +166,7 @@
               <li style="display:inline">Football Gang |</li>
             </ul>
           </div>
-          <div class="chat_content" style="margin-top:60px">
+          <div class="chat_content bg-light" style="margin-top:60px">
             <ul style="padding:0">
               <li style="padding:3px;float:left" >
                 <img src="library.jpeg" alt="" width="30px" class="rounded-circle">
@@ -212,7 +223,7 @@
          </div>
         </div>
 
-        <button type="button" class="bUTTON btn btn-success text-center" >Chat</button>
+        <button type="button" class="bUTTON btn btn-secondary text-center">Chat</button>
       </div>
 
 
@@ -349,26 +360,35 @@
        <div class="feed">
          <h2>Stories</h2>
            <div class="stories container" style="background-color:#ccc">
+
             <div class="s1 card container mt-2 bg-light">
               <ul class="stories_photo mt-2" style="padding:0">
                 <li><img class="rounded-circle" src="board.jpg" width="60px" alt=""></li>
-                <li>Ranjan</li><br>
-                <p class="ml-4">4 hours ago</p>
+                <li>Ranjan
+                  <span style="float:right">-10th dec</span>
+                </li>
               </ul>
-
-
               <div class="post">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Do what ur heart says.</p>
               </div>
               <div class="reaction">
-                comment
+                <button type="button" name="button" class="comment_control btn btn-light far fa-comment-alt">  Comment</button>
+                <div class="comment_show" style="display:none">
+                  <textarea name="name" rows="2" cols="50" class="comment_content"></textarea>
+                  <button type="submit" name="button" class="comment_submit">Comment</button>
+                </div>
+
               </div>
             </div>
-              <div class="s2 card container mt-2">
-                <ul class="stories_photo mt-2">
+
+
+
+              <div class="s2 card container mt-2 bg-light">
+                <ul class="stories_photo mt-2" style="padding:0">
                   <li><img class="rounded-circle" src="board.jpg" width="60px" alt=""></li>
-                  <li>Ranjan</li>
-                  <p class="ml-5">-4 hours ago</p>
+                  <li>anonymous
+                    <span style="float:right">-11th Dec</span>
+                  </li>
                 </ul>
 
 

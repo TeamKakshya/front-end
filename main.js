@@ -31,27 +31,43 @@ $(document).ready(function() {
     //show hidden input text for add notice
     $('.add_notice').on('click',show_add);
     function show_add() {
-    $(".add_input").css("display","block");
+    $(".add_input").slideToggle();
   }//show show hidden input text for add notice
 
     //for taking the value of input text in input add events and add it in notice marquee
     $('.add_button').on('click',takevalue);
     function takevalue() {
       var test = $("#notice_input").val();
-      $('.mark').append('<a href="#" target="_blank">'+test);
-    }//for taking the value of input text in input add events and add it in notice marquee
+      $('.marks').append('<a href="#" target="_blank">'+test);
+    };//for taking the value of input text in input add events and add it in notice marquee
 
     //show hidden input text for events
     $('.event_addbtn').on('click',show_eventadd);
     function show_eventadd() {
-    $(".events_form").css("display","block");
-  }//show show hidden input text for add notice
+    $(".events_form").slideToggle();
+  };//show show hidden input text for add notice
 
     //for taking the value of input text in input add events and add it in notice marquee
     $('.event_donebtn').on('click',take_event);
     function take_event() {
       var test_event = $(".event_text").val();
-      $('.events_only').append('<ul class="event 3"><a href="#"><li class="eventProg">test_event</li><li class="eventDay">@4pm</li></a></ul>');
+      var test_time= $(".event_time").val();
+      // console.log(test_event);
+      $('.events_only').append('<ul class="event 3"><a href="#"><li class="eventProg">'+test_event+'</li><li class="eventDay">@'+test_time+'</li></a></ul>');
+    }//for taking the value of input text in input add events and add it in notice marquee
+
+    //show hidden birthday text for events
+    $('.birthday_addbtn').on('click',show_birthdayadd);
+    function show_birthdayadd() {
+    $(".birthday_form").slideToggle();
+  }//show show hidden input text for add notice
+
+    //for taking the value of input text in input add events and add it in notice marquee
+    $('.birthday_donebtn').on('click',take_birthday);
+    function take_birthday() {
+      var test_birthday = $(".birthday_text").val();
+      var test_date= $(".birthday_date").val();
+      $(".birthday_panel").append('<ul class="list container " style="background-color:#ffff"><li class="photo"><img class="avatar" src="black.png" alt=""></li><li class="name">'+test_birthday+'</li></ul>');
     }//for taking the value of input text in input add events and add it in notice marquee
 
 
@@ -60,12 +76,22 @@ $(document).ready(function() {
     $('.bUTTON').on('click',change_css );
     function change_css() {
         $('.collapse').slideToggle(200);
-      }    //for chat toggles i.e from up to down
+      };    //for chat toggles i.e from up to down
 
     //chat width fixed of tABS
 
      // var parentwidth = $(".collapse").width();
      // $(".tABS").toggleClass(".fixed").width(parentwidth);
 
+     //for comment to toggle
+     $('.comment_control').on('click',show_comment);
+     function show_comment() {
+       $('.comment_show').slideToggle();
+     };
+
+     $('.comment_submit').on('click',function () {
+       var comment_value = $('.comment_content').val();
+      alert(comment_value);
+    });
 
 });
