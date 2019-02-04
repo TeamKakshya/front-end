@@ -67,7 +67,7 @@ $(document).ready(function() {
     function take_birthday() {
       var test_birthday = $(".birthday_text").val();
       var test_date= $(".birthday_date").val();
-      $(".birthday_panel").append('<ul class="list container " style="background-color:#ffff"><li class="photo"><img class="avatar" src="black.png" alt=""></li><li class="name">'+test_birthday+'</li></ul>');
+      $(".birthday_panel").append('<ul class="list container " style="background-color:#ffff"><li class="photo"><img class="avatar" src="black.png" alt=""></li><li class="name">'+test_date+'</li></ul>');
     }//for taking the value of input text in input add events and add it in notice marquee
 
 

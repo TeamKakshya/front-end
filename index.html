@@ -92,11 +92,11 @@
           </div>
 
           <button type="" name="" class="birthday_addbtn"><span class="far fa-plus-square">A day more older</span></button>
-          <form class="birthday_form" style="display:none">
+          <div class="birthday_form" style="display:none">
             <input type="text" name="" value="" class="birthday_text" placeholder="Birthday Student">
             <input type="text" class="birthday_date" placeholder="birthdate">
-            <button type="button" name="" class="birthday_donebtn">Done</button>
-          </form>
+            <button type="submit" name="" class="birthday_donebtn">Done</button>
+          </div>
           <!-- <a href="add_events"><span class="far fa-plus-square" style="margin-left:70%;">Add</span></a> -->
 
           <!-- <div class="day card">
@@ -158,12 +158,12 @@
           </div>
         </div>
       <div class="bottoms">
-        <div class="collapse" id="chat">
+        <div class="collapse" id="chat" style="border:2px solid #6c757d;border-radius:3px">
           <div class="tABS" style="position:fixed;width:275px">
-            <ul style="background-color:#ccc;padding:10px">
+            <ul style="background-color:#6c757d;padding:10px" class="">
               <span class="fa fa-comment"></span>
               <li style="display:inline">Group Chat |</li>
-              <li style="display:inline">Football Gang |</li>
+              <!-- <li style="display:inline">Football Gang |</li> -->
             </ul>
           </div>
           <div class="chat_content bg-light" style="margin-top:60px">
@@ -219,7 +219,7 @@
             <input type="text" name="" value="" style="word-wrap:break-word" placeholder="Write message here">
 
               <!-- <textarea name="textarea" style="padding:0;margin:0"></textarea> -->
-              <button type="button" name="button" class="btn-primary">Send</button>
+              <button type="button" name="button" class="btn btn-primary">Send</button>
          </div>
         </div>
 
@@ -242,8 +242,8 @@
   <div class="section container"><hr>
     <div class="row">
       <div class="col-sm-3">
-        <div class="project container card">
-          <h3>Projects<span class="fa fa-projects"></span></h3>
+        <div class="project container card bg-light">
+          <h3 class="text-center">Projects<span class="fa fa-projects"></span></h3>
             <ul style="padding:0">
               <li>xyz started project IOT <a href="project.html">See more</a></li>
               <li>xyz started project IOT <a href="project.html">See more</a></li>
@@ -251,7 +251,7 @@
             </ul>
         </div>
         <hr>
-        <div class="library container card">
+        <div class="library container card bg-light">
           <h3 class="text-center">Library</h3>
             <ul class="container">
               <li><a href="#">Digital(online)</a></li>
@@ -276,7 +276,7 @@
               <li rel="panel5"><h5>Journal</h5></li>
             </ul>
             <div id="panel1" class="panel active">
-              <div class="boxx"><!--duita box xa-->
+              <div class="boxx container"><!--duita box xa-->
                 <form class="forms" action="forms.html" method="post">
                   <span>Post to the feed</span>
                   <textarea class="text-area" name="texts" rows="8" cols="80" placeholder="Feel free to share."></textarea><br>
@@ -408,7 +408,7 @@
 
 
       <div class="col-sm-3">
-        <div class="journal container card">
+        <div class="journal container card bg-light">
           <h3 class="text-center">Journal</h3>
             <blockquote class="blockquote">
               <div class="journal1 container card">
