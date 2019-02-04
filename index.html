@@ -29,19 +29,22 @@
 
       <ul class="navbar-nav ">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#"><i class="fa fa-fw fa-home"></i>Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Profile</a>
+          <a class="nav-link" href="#"><i class="fa fa-fw fa-user"></i>Profile</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="gallery.html">Gallery</a>
+          <a class="nav-link" href="gallery.html"><i class="fa fa-fw fa-camera"></i>Gallery</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Notice</a>
+          <a class="nav-link" href="#"><i class="fa fa-fw fa-bullhorn"></i>Notice</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contacts</a>
+          <a class="nav-link" href="#"><i class="fa fa-fw fa-mobile"></i>Contacts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fab fa-github"></i>Github</a>
         </li>
       </ul>
     </div>
@@ -69,11 +72,11 @@
               </div>
 
 
-              <button type="" name="" class="event_addbtn"><span class="far fa-plus-square">Add</span></button>
+              <button type="" name="" class="event_addbtn btn btn-secondary"><span class="far fa-plus-square">Add</span></button>
               <form class="events_form" style="display:none">
                 <input type="text" name="" value="" class="event_text" placeholder="Event Name">
                 <input type="text" class="event_time" placeholder="Event Time">
-                <button type="button" name="" class="event_donebtn">Done</button>
+                <button type="button" name="" class="event_donebtn btn btn-secondary">Done</button>
               </form>
             </div>
         </div>
@@ -91,11 +94,11 @@
 
           </div>
 
-          <button type="" name="" class="birthday_addbtn"><span class="far fa-plus-square">A day more older</span></button>
+          <button type="" name="" class="birthday_addbtn btn btn-secondary"><span class="far fa-plus-square">A day more older</span></button>
           <div class="birthday_form" style="display:none">
             <input type="text" name="" value="" class="birthday_text" placeholder="Birthday Student">
             <input type="text" class="birthday_date" placeholder="birthdate">
-            <button type="submit" name="" class="birthday_donebtn">Done</button>
+            <button type="submit" name="" class="birthday_donebtn btn btn-secondary">Done</button>
           </div>
           <!-- <a href="add_events"><span class="far fa-plus-square" style="margin-left:70%;">Add</span></a> -->
 
@@ -151,10 +154,10 @@
               <a href="#" target="_blank">Notice1</a><br>
           </center>
           </marquee>
-          <button class="add_notice">Add notice</button>
+          <button class="add_notice btn btn-secondary">Add notice</button>
           <div class="add_input" style="display:none">
             <input type="text" name="" value="" id="notice_input">
-            <button type="submit" name="button" class="add_button">Add</button>
+            <button type="submit" name="button" class="add_button btn-secondary">Add</button>
           </div>
         </div>
       <div class="bottoms">
@@ -282,11 +285,11 @@
                   <textarea class="text-area" name="texts" rows="8" cols="80" placeholder="Feel free to share."></textarea><br>
                   <button class="btn btn-success" name="button">Post</button>
 
-                </form>
-                <span>Upload image</span>
+                </form><br>
+                <span>Upload image:</span>
                 <form class="upload" action="post.html" method="post">
                     <input type="file" name="pic">
-                    <input type="submit">
+                    <input type="submit" class="btn btn-success">
                 </form>
               </div>
             </div>
@@ -359,35 +362,39 @@
        <!-- </div> -->
        <div class="feed">
          <h2>Stories</h2>
-           <div class="stories container" style="background-color:#ccc">
+           <div class="stories container" ><!--style="background-color:#ccc" for background color-->
 
-            <div class="s1 card container mt-2 bg-light">
+            <div class="s1 card container mt-2 "><!--bg-light for background color-->
               <ul class="stories_photo mt-2" style="padding:0">
                 <li><img class="rounded-circle" src="board.jpg" width="60px" alt=""></li>
                 <li>Ranjan
-                  <span style="float:right">-10th dec</span>
+                  <span style="float:right">10th dec</span>
                 </li>
               </ul>
               <div class="post">
                 <p>Do what ur heart says.</p>
               </div>
+              <div class="upvote">
+              </div>
               <div class="reaction">
+                <button type="button" name="button" class="btn btn-light fas fa-arrow-up">Upvote</button>
                 <button type="button" name="button" class="comment_control btn btn-light far fa-comment-alt">  Comment</button>
                 <div class="comment_show" style="display:none">
                   <textarea name="name" rows="2" cols="50" class="comment_content"></textarea>
                   <button type="submit" name="button" class="comment_submit">Comment</button>
                 </div>
 
+
               </div>
             </div>
 
 
 
-              <div class="s2 card container mt-2 bg-light">
+              <div class="s2 card container mt-2">
                 <ul class="stories_photo mt-2" style="padding:0">
                   <li><img class="rounded-circle" src="board.jpg" width="60px" alt=""></li>
                   <li>anonymous
-                    <span style="float:right">-11th Dec</span>
+                    <span style="float:right">11th Dec</span>
                   </li>
                 </ul>
 
