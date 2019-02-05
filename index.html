@@ -35,11 +35,17 @@
           <a class="nav-link" href="#"><i class="fa fa-fw fa-user"></i>Profile</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="gallery.html"><i class="fa fa-fw fa-camera"></i>Gallery</a>
+          <a class="nav-link" href="gallery.html"><i class="fa fa-fw fa-pen"></i>Create Post</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa fa-fw fa-bullhorn"></i>Notice</a>
+          <a class="nav-link" href="#"><i class="fa fa-fw fa-bell"></i>Notifications</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html"><i class="fa fa-fw fa-camera"></i>Gallery</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa fa-fw fa-bullhorn"></i>Notice</a>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="#"><i class="fa fa-fw fa-mobile"></i>Contacts</a>
         </li>
@@ -56,9 +62,9 @@
     <div class="row">
 
       <div class="events col-md-2" >
-        <div class="box card bg-light">
+        <div class="box card bg-light" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
           <h2 class="text-center card " style="display:inline">Events <span class="far fa-calendar-check"></span></h2>
-            <div class="eve container">
+            <div class="eve container" >
               <div class="events_only">
                 <ul class="event 1">
                   <a href="#"><li class="eventProg">FlashMob</li>
@@ -72,15 +78,15 @@
               </div>
 
 
-              <button type="" name="" class="event_addbtn btn btn-secondary"><span class="far fa-plus-square">Add</span></button>
+              <button type="" name="" class="event_addbtn btn btn-outline-secondary mb-2"><span class="far fa-plus-square">Add</span></button>
               <form class="events_form" style="display:none">
-                <input type="text" name="" value="" class="event_text" placeholder="Event Name">
-                <input type="text" class="event_time" placeholder="Event Time">
-                <button type="button" name="" class="event_donebtn btn btn-secondary">Done</button>
+                <input type="text" name="" value="" class="event_text form-control mb-2" placeholder="Event Name">
+                <input type="text" class="event_time form-control mb-2" placeholder="Event Time">
+                <button type="button" name="" class="event_donebtn btn btn-outline-secondary">Done</button>
               </form>
             </div>
         </div>
-        <div class="birthdays card bg-light">
+        <div class="birthdays card bg-light" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
           <h2 class="text-center card" style="display:inline">Birthdays <span class="fa fa-birthday-cake"></span></h2>
           <div class="birthday_panel">
             <ul class="list container" style="background-color:#ffff">
@@ -94,11 +100,11 @@
 
           </div>
 
-          <button type="" name="" class="birthday_addbtn btn btn-secondary"><span class="far fa-plus-square">A day more older</span></button>
+          <button type="" name="" class="birthday_addbtn btn btn-outline-secondary mb-2"><span class="far fa-plus-square">A day more older</span></button>
           <div class="birthday_form" style="display:none">
-            <input type="text" name="" value="" class="birthday_text" placeholder="Birthday Student">
-            <input type="text" class="birthday_date" placeholder="birthdate">
-            <button type="submit" name="" class="birthday_donebtn btn btn-secondary">Done</button>
+            <input type="text" name="" value="" class="birthday_text form-control mb-2" placeholder="Birthday Student">
+            <input type="text" class="birthday_date form-control mb-2" placeholder="birthdate">
+            <button type="submit" name="" class="birthday_donebtn btn btn-outline-secondary ">Done</button>
           </div>
           <!-- <a href="add_events"><span class="far fa-plus-square" style="margin-left:70%;">Add</span></a> -->
 
@@ -121,13 +127,13 @@
       </div>
       <div class="image col-md-8 ">
 
-        <div class="centered container ">
+        <div class="centered container shadow-lg p-3 mb-5 bg-white rounded" >
           <!-- <div class="image_container"> class board
             <img src="board.jpg" alt="board">
           </div> -->
           <!-- <h1 class="text-center">Articles</h1> -->
           <br>
-          <div class="slider container">
+          <div class="slider container ">
             <!-- <div class="col-sm-12"> -->
             <ul class="slides">
               <li class="slide"><img class="img-fluid" src="4.JPG" width="800px" height="533px"></li><!--have to make responsive-->/
@@ -140,7 +146,7 @@
         </div>
       </div>
       <div class="notice col-md-2">
-        <div class="right-box card bg-light">
+        <div class="right-box card bg-light mb-3" style="  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
           <h2 class="text-center card">Notices</h2>
           <marquee scrolldelay="100" direction="up" >
             <center class="marks">
@@ -154,10 +160,10 @@
               <a href="#" target="_blank">Notice1</a><br>
           </center>
           </marquee>
-          <button class="add_notice btn btn-secondary">Add notice</button>
+          <button class="add_notice btn btn-secondary mb-2">Add notice</button>
           <div class="add_input" style="display:none">
-            <input type="text" name="" value="" id="notice_input">
-            <button type="submit" name="button" class="add_button btn-secondary">Add</button>
+            <input type="text" name="" value="" id="notice_input" class="form-control mb-2">
+            <button type="submit" name="button" class="add_button btn btn-secondary">Add</button>
           </div>
         </div>
       <div class="bottoms">
@@ -222,7 +228,7 @@
             <input type="text" name="" value="" style="word-wrap:break-word" placeholder="Write message here">
 
               <!-- <textarea name="textarea" style="padding:0;margin:0"></textarea> -->
-              <button type="button" name="button" class="btn btn-primary">Send</button>
+              <button type="button" name="button" class="btn btn-primary fa fa-angle-double-right">Send</button>
          </div>
         </div>
 
@@ -245,16 +251,16 @@
   <div class="section container"><hr>
     <div class="row">
       <div class="col-sm-3">
-        <div class="project container card bg-light">
+        <div class="project container card bg-light" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
           <h3 class="text-center">Projects<span class="fa fa-projects"></span></h3>
             <ul style="padding:0">
               <li>xyz started project IOT <a href="project.html">See more</a></li>
               <li>xyz started project IOT <a href="project.html">See more</a></li>
-              <div class="text-right mr-3"><a href="#">See all..</a></div>
+              <div class="text-right mr-3"><a href="projects.html">See all..</a></div>
             </ul>
         </div>
         <hr>
-        <div class="library container card bg-light">
+        <div class="library container card bg-light" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
           <h3 class="text-center">Library</h3>
             <ul class="container">
               <li><a href="#">Digital(online)</a></li>
@@ -270,8 +276,8 @@
       <div class="feed col-sm-6">
         <div class="news-feed">
           <h2 class="text-center ">News Feed</h2>
-          <div class="tab-panels">
-            <ul class="tabs" style="background-color:#b1abae14">
+          <div class="tab-panels" style="background-color:#FBFFFB">
+            <ul class="tabs" style="background-color:#b1abae14"><!--#f8f9fa for light color-->
               <li rel="panel1" class="active"><h5>Post</h5></li>
               <li rel="panel2"><h5>Article</h5></li>
               <li rel="panel3"><h5>Poll</h5></li>
@@ -281,7 +287,7 @@
             <div id="panel1" class="panel active">
               <div class="boxx container"><!--duita box xa-->
                 <form class="forms" action="forms.html" method="post">
-                  <span>Post to the feed</span>
+                  <h2>Post to the feed</h2>
                   <textarea class="text-area" name="texts" rows="8" cols="80" placeholder="Feel free to share."></textarea><br>
                   <button class="btn btn-success" name="button">Post</button>
 
@@ -297,15 +303,15 @@
 
             <div id="panel2" class="panel">
               <div class="article">
-                <p class="lead">Post an article:</p>
+                <h2 >Post an article:</h2>
                 <ul class="article_ul">
                   <!-- <li><img class="rounded-circle" src="board.jpg" alt="" width="50px"></li> -->
 
                     <form class="" action="index.html" method="post" >
-                      <li>Title<input type="text" placeholder="Title for your article"></li><br>
+                      <li>Title<input type="text" placeholder="Title for your article" class="form-control"></li><br>
                       <li>Article</li>
                       <li>
-                        <input type="file" name="" value=""><button class="btn btn-success" type="button">Upload</button>
+                        <input type="file" name="" value="" ><button class="btn btn-success" type="button">Upload</button>
                       </li>
                     </form>
 
@@ -314,7 +320,7 @@
             </div>
 
             <div id="panel3" class="panel">
-              <p>Create a poll on:</p>
+              <h2>Create a poll on:</h2>
               <ul>
                 <li>Topic: </li>
                 <textarea rows="3" cols="44"></textarea>
@@ -325,11 +331,11 @@
                						<div class="table-responsive">
                							<table class="table table-bordered" id="dynamic_field">
                								<tr>
-               									<td><input type="text" name="name[]" placeholder="Enter your Name" class="form-control name_list" /></td>
-               									<td><button type="button" name="add" id="add" class="btn btn-success">Add More</button></td>
+               									<td><input type="text" name="name[]" placeholder="Enter option" class="form-control name_list" /></td>
+               									<td><button type="button" name="add" id="add" class="btn btn-info">Add More</button></td>
                								</tr>
                							</table>
-               							<input type="button" name="submit" id="submit" class="btn btn-info" value="Submit" />
+               							<input type="button" name="submit" id="submit" class="btn btn-success" value="Submit" />
                						</div>
                					</form>
                    </div>
@@ -340,7 +346,7 @@
 
             <div id="panel4" class="panel">
               <div class="question">
-                <h1>Question</h1>
+                <h2>Question</h2>
                 <textarea name="texts question" rows="8" cols="80" placeholder="The question is"></textarea><br>
                 <button class="btn btn-success" type="submit" name="button" >Submit</button>
               </div>
@@ -348,7 +354,7 @@
 
             <div id="panel5" class="panel">
               <div class="journal">
-                <h1>Post a journal</h1>
+                <h2>Post a journal</h2>
                 <textarea name="texts question" rows="8" cols="80" placeholder="the topic is"></textarea><br>
                 <button class="btn btn-success" type="submit" name="button">Submit</button>
               </div>
@@ -364,7 +370,7 @@
          <h2>Stories</h2>
            <div class="stories container" ><!--style="background-color:#ccc" for background color-->
 
-            <div class="s1 card container mt-2 "><!--bg-light for background color-->
+            <div class="feed_shade s1 card container mt-2 "><!--bg-light for background color-->
               <ul class="stories_photo mt-2" style="padding:0">
                 <li><img class="rounded-circle" src="board.jpg" width="60px" alt=""></li>
                 <li>Ranjan
@@ -390,7 +396,7 @@
 
 
 
-              <div class="s2 card container mt-2">
+              <div class=" feed_shade Ss2 card container mt-2">
                 <ul class="stories_photo mt-2" style="padding:0">
                   <li><img class="rounded-circle" src="board.jpg" width="60px" alt=""></li>
                   <li>anonymous
@@ -415,10 +421,10 @@
 
 
       <div class="col-sm-3">
-        <div class="journal container card bg-light">
+        <div class="journal container card bg-light " style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
           <h3 class="text-center">Journal</h3>
-            <blockquote class="blockquote">
-              <div class="journal1 container card">
+            <blockquote class="blockquote ">
+              <div class="journal1 container card" >
                 <p>Hey i dont have petty much concept about it</p>
                 <footer class="blockquote-footer">MR Jackson</footer>
               </div>
@@ -432,7 +438,7 @@
             </blockquote>
         </div>
         <hr>
-        <div class="links container card">
+        <div class="links container card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
           <h3 class="text-center">Important Links</h3>
           <ul>
             <li><a href="https://pcampus.edu.np">Pcampus</a></li>
@@ -448,7 +454,13 @@
 
     </div><!--section container-->
 
+  <footer class="bg-dark mt-2">
+    <div class="footer-content">
+      <p class="text-center mt-2 mb-0" style="color:white">&copy; 2019 Copyright:<strong>Kakshya</strong></p>
+      <p class="text-center mb-1" style="color:white">Created By:Kakshya Team</p>
 
+  </div>
+  </footer>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script> -->
 

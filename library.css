@@ -51,3 +51,8 @@
   height: 800px;
   margin-left: 400px;
 } */
+
+.imgbox{
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)  0 400px 20px 0 rgba(0, 0, 0, 0.2);
+ border-radius:5px;
+}

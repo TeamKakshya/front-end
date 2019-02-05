@@ -71,7 +71,7 @@ body{
     margin-top:20%;
     margin-left: 20%;
     padding: 10px;
-
+    margin-bottom: 10%;
   }
 
 
@@ -100,9 +100,9 @@ body{
 
 .tab-panels{
   margin-top: 20px;
-  border: 1px solid #eee;
+  border: 2px solid #eee;
   border-radius: 5px;
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 
 /* .tab-panels ul{
@@ -130,7 +130,7 @@ body{
 }
 
 .tab-panels .panel .active{
-  display: block;
+  /* display: block; */
   color: red;
 }
 
@@ -234,4 +234,9 @@ body{
 
 .bUTTON{
   width: 290px;
+}
+
+.feed_shade{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color:#FBFFFB;
 }
