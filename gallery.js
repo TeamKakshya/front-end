@@ -17,4 +17,23 @@ $(document).ready(function(){
   function closeModal() {
     $modal.css("display","none");
   }
+
+  // var folder = "images";
+  // $('#fuck').on('click',
+  //   function idk() {
+  //     $('p').load("index.html");
+  //   })
+
+
+  // $.ajax({
+  //   url:folder,
+  //   success:function (data) {
+  //     alert();
+  //     // $(data).find("a").attr("href",function (i,val) {
+  //     //   if (val.match(/\.(jpe?g|png|gif)$/)){
+  //     //     $('.row').append("<img src='"+folder+val+"'>");
+  //     //   }
+  //     // })
+  //   }
+  // })
 });

@@ -68,18 +68,41 @@ body{
 
   /*birthdays below events*/
   .birthdays{
-    margin-top:20%;
-    margin-left: 20%;
+    margin-top:10%;
+    margin-left: 10%;
     padding: 10px;
     margin-bottom: 10%;
   }
 
+  /*temporary_menu*/
+  .temporary_menu{
+    margin-top:10%;
+    margin-bottom: 20%;
+    margin-left: 10%;
+    padding: 2px;
+  }
+  .temporary_menu li{
+    padding: 5px;
+    margin: 5px;
+  }
+  .temporary_menu li:hover{
+    background-color:#343a40;
+  }
+
+  .temporary_menu a{
+    text-decoration: none;
+    color:black;
+  }
+
+  .temporary_menu a:hover{
+    color:white;
+  }
 
 
 /*events at left side*/
 .box{
-  margin-top:35%;
-  margin-left: 20%;
+  margin-top:10%;
+  margin-left: 10%;
   padding: 10px;
 }
 
